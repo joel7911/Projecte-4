@@ -30,3 +30,30 @@ ara els directoris
 
 
 i els permisos
+
+<img width="495" height="84" alt="image" src="https://github.com/user-attachments/assets/6adbddb1-8e2d-4031-879d-267dccc503ec" />
+
+per comprobar si esta bé farem:
+
+<img width="559" height="78" alt="image" src="https://github.com/user-attachments/assets/b9a4acef-2374-4493-9bfd-49c909db4f83" />
+
+## Instalacio del Servidor NFS
+
+sudo apt install nfs-kernel-server -y
+
+ara en el client farem:
+````
+sudo apt update && sudo apt upgrade -y
+sudo apt install nfs-common -y
+````
+Editem l'arxiu fent 
+````
+sudo nano /etc/exports
+````
+<img width="757" height="196" alt="image" src="https://github.com/user-attachments/assets/e3079a65-0b71-43e2-9479-3ba64ad1bc99" />
+
+fent sudo exportfs -ra
+
+<img width="771" height="34" alt="image" src="https://github.com/user-attachments/assets/c7fc5cb3-2d55-45d5-9f91-92c4932eff78" />
+
+estaba creando el touch
